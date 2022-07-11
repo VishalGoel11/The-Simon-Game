@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <div class="div5"></div>
+    <div class="div1">
+        <div class="cent">
+        <h1 id="heading">Let's Start the game</h1>
+        <!-- <button type="submit" id="b5" onclick="pogo1()">Start</button> -->
+        <!-- <button type="submit" id="b5" onclick="pogo2()">End</button> -->
+        <div class="class1">
+            <div class="div2">
+                <h1 id="answer1">Right Guess : <span id="right">0</span></h1>
+                <h1 id="answer2">Wrong Guess : <span id="wrong">0</span></h1>
+                <button type="submit" id="b1" onclick="btn1()">Click Me</button>
+                <button type="submit" id="b2" onclick="btn2()">Click Me</button>
+            </div>
+            <div class="div2">
+                <button type="submit" id="b3" onclick="btn3()">Click Me</button>
+                <button type="submit" id="b4" onclick="btn4()">Click Me</button>
+            </div>
+        </div>
+        <div class="start-end"><button type="submit" id="b5" onclick="pogo1()">Start</button><button type="submit" id="b6" onclick="pogo2()">End</button></div>
+    </div>
+    </div>
+</body>
+<script>
+    var bool = false;
+    var b=0;
+    var k=0;
+    var answer1=document.getElementById("right");
+    var answer2=document.getElementById("wrong");
+    var pogo1 = function () {
+        bool=true;
+        if (bool === true) {
+            var head = document.getElementById("heading");
+            head.innerHTML = "Game is started";
+            bool=true;
+        }
+    }
+    var pogo2=()=>{
+            bool=false;
+            var head = document.getElementById("heading");
+            head.innerHTML = "Game is Ended";
+    }
+
+    var btn4 = function () {
+        var a = Math.random();
+        var number = Math.round(10 * a);
+        if(bool===true){
+        if (number === 1 || number===2 || number===3 || number===4 || number===5) {
+            confirm("Hurray!, you clicked right button");
+            k++;
+            answer1.innerHTML=k;
+            answer1.style.color.innerHTML="green";
+        }else {
+            confirm("Better luck next Time");
+            b++;
+            answer2.innerHTML=b;
+            answer2.style.color.innerHTML="red";
+        }
+    }else{
+        alert("You have not started the game");
+    }
+    }
+    var btn1 = function () {
+        var a = Math.random();
+        if(bool===true){
+        var number = Math.round(10 * a);
+        if (number === 3 || number==6 || number==9 || number===1 || number===7) {
+            confirm("Hurray!, you clicked right button");
+            k++;
+            answer1.innerHTML=k;
+            answer1.style.color.innerHTML="green";
+        } else {
+            confirm("Better luck next Time");
+            b++;
+            answer2.innerHTML=b;
+            answer2.style.color.innerHTML="red";
+        }}else{
+        alert("You have not started the game");
+    }
+    }
+    var btn2 = function () {
+        var a = Math.random();
+        var number = Math.round(10 * a);
+        if(bool===true){
+        if (number === 1 || number===2 || number===3 || number===4 || number===5) {
+            confirm("Hurray!, you clicked right button");
+            k++;
+            answer1.innerHTML=k;
+            answer1.style.color.innerHTML="green";
+        } else {
+            confirm("Better luck next Time");
+            b++;
+            answer2.innerHTML=b;
+            answer2.style.color.innerHTML="red";
+        }}else{
+        alert("You have not started the game");
+    }
+    }
+    var btn3 = function () {
+        var a = Math.random();
+        var number = Math.round(10 * a);
+        if(bool===true){
+        if (number === 1 || number===2 || number===3 || number===4 || number===5) {
+            confirm("Hurray!, you clicked right button");
+            k++;
+            answer1.innerHTML=k;
+            answer1.style.color.innerHTML="green";
+        }
+        else {
+            confirm("Better luck next Time");
+            b++;
+            answer2.innerHTML=b;
+            answer2.style.color.innerHTML="red";
+        }}else{
+        alert("You have not started the game");
+    }
+    }
+
+</script>
+
+</html>

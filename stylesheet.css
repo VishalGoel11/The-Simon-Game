@@ -1,0 +1,88 @@
+body{
+    background-color: aquamarine;
+}
+.div5{
+margin-bottom: 10%;
+}
+.div1{
+    
+    width: 100vh;
+    margin: auto;
+   
+    height: 100vh;
+ }
+ .cent{
+    border-color: black;
+    border-width: 4px;
+    background-image: url(image9.jpg);
+    border-radius: 20%;
+    background-size: cover;
+}
+ .div2{
+    margin-left: 40%;
+   
+ }
+ .class1{
+    margin-top: 15%;
+ }
+ #heading{
+    text-align: center;
+    color: burlywood;
+    font-style: italic;
+    font-family: cursive;
+ }
+#b1{
+    height: 80px;
+    width: 80px;
+    background-color: green;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 20%;
+}
+#b2{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    margin-bottom: 5px;
+    border-radius: 20%;
+}
+#b3{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    margin-right: 5px;
+    border-radius: 20%;
+}
+#b4{
+    background-color: chartreuse;
+    height: 80px;
+    width: 80px;
+    border-radius: 20%;
+}
+#b5{
+    height: 40px;
+    width: 40px;
+    background-color: yellowgreen;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 20%;
+}
+#answer1{
+    color: rgb(189, 237, 17);
+}
+#answer2{
+    color: rgb(5, 131, 21);
+}
+.start-end{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#b6{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 20%;
+}
